@@ -9,6 +9,8 @@ import { withResizeDetector, useResizeDetector } from 'react-resize-detector';
 import Bounce from 'react-reveal/Bounce';
 import Button from './button';
 
+import theme from '../../lib/theme/local';
+
 import headerTransparencyUtility from './utilities/index';
 import resizeHandlerUtility from './utilities/index';
 
@@ -74,9 +76,9 @@ export default withResizeDetector(
               <img
                 src="https://raw.githubusercontent.com/hackclub/india-site/master/public/hackclubflag.png"
                 sx={{
+                  ml: theme.base.ml,
                   width: ['100px', '110px', '100px'], // ['100px', '110px', '120px'],
                   position: 'absolute',
-                  ml: [2, 2, 2, 2, 5],
                   bottom: [1],
                 }}
               />

@@ -1,14 +1,26 @@
 /** @format */
 
+import { set } from 'lodash';
 import dynamic from 'next/dynamic';
+import { useEffect, useState } from 'react';
 import { Box, Text } from 'theme-ui';
 import Button from './button';
 
 const Snowfall = dynamic(import('react-snowstorm'), { ssr: false });
 
-export default () => {
+export default function Comp() {
+  const [height, set_height] = useState(400);
+
+  useEffect(() => {
+    const height = window.document.getElementById('hero').clientHeight;
+    set_height(height);
+
+    return () => {};
+  }, []);
+
   return (
     <Box
+      id="hero"
       sx={{
         bg: '#060E36',
         pt: [60, 60, 60, 60, 100],
@@ -40,7 +52,13 @@ export default () => {
         ],
       }}
     >
-      <Snowfall flakesMax={240} flakesMaxActive={160} />
+      <Snowfall
+        flakesMax={240}
+        flakesMaxActive={160}
+        targetElement={'hero'}
+        flakeBottom={height}
+        snowStick={false}
+      />
       <Sun />
       <Box
         sx={{
@@ -107,7 +125,7 @@ export default () => {
       </Box>
     </Box>
   );
-};
+}
 
 const Sun = () => (
   <Box
