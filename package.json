@@ -1,0 +1,29 @@
+{
+  "name": "asia-mini-conf",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-react-jsx": "^7.12.11",
+    "@emotion/styled": "^11.1.5",
+    "@hackclub/icons": "^0.0.9",
+    "@hackclub/theme": "^0.3.1",
+    "@theme-ui/presets": "^0.3.4",
+    "lodash": "^4.17.21",
+    "next": "10.0.9",
+    "ramda": "^0.27.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-feather": "^2.0.9",
+    "react-resize-detector": "^6.6.3",
+    "react-reveal": "^1.2.2",
+    "react-scrolllock": "^5.0.1",
+    "react-snowstorm": "^0.0.3",
+    "theme-ui": "^0.6.0-alpha.3"
+  }
+}
