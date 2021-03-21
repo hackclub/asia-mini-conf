@@ -11,7 +11,25 @@ export default function Comp() {
   const h_2 = 678;
 
   return (
-    <Box sx={{ ml: theme.base.ml, overflowX: 'hidden' }}>
+    <Box
+      sx={{
+        pl: theme.base.ml,
+        overflowX: 'hidden',
+
+        backgroundImage: ['url(ellipse.png),url(yellow_patch_right_1.png)'],
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: [
+          '200px',
+          '200px',
+          '200px',
+          '200px',
+          '250px',
+          '250px',
+          '280px',
+        ],
+        backgroundPosition: 'left -30px top 0px , right 0px bottom 0px',
+      }}
+    >
       <h1 sx={{ mb: [0], fontSize: [3, 3, 3, 3, 4], color: 'muted' }}>
         see, awesome projects/events by Hack Clubbers{' '}
       </h1>
