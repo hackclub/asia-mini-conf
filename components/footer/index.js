@@ -15,7 +15,7 @@ export default () => (
     }}
   >
     <Grid
-      columns={[null, null, 2]}
+      columns={[null, null, null, null, 2]}
       sx={{
         width: '100vw',
         img: {
@@ -32,7 +32,7 @@ export default () => (
         className="footerfirsthalf"
         sx={{
           mx: 'auto',
-          display: ['flex', 'flex', 'initial'],
+          display: ['flex', 'flex', 'flex', 'initial'],
           flexWrap: 'wrap',
           justifyContent: 'center',
           a: {
@@ -78,8 +78,8 @@ export default () => (
           <img
             src="https://raw.githubusercontent.com/hackclub/india-site/master/public/social/facebook.png"
             sx={{
-              width: [40, 46, 50, 64],
-              height: [40, 46, 50, 64],
+              width: [40, 46, 46, 50, 64],
+              height: [40, 46, 46, 50, 64],
               mx: [2, 3],
             }}
           ></img>
@@ -88,8 +88,8 @@ export default () => (
           <img
             src="https://raw.githubusercontent.com/hackclub/india-site/master/public/social/instagram.png"
             sx={{
-              width: [40, 46, 50, 64],
-              height: [40, 46, 50, 64],
+              width: [40, 46, 46, 50, 64],
+              height: [40, 46, 46, 50, 64],
               mx: [2, 3],
             }}
           ></img>
@@ -98,8 +98,8 @@ export default () => (
           <img
             src="https://raw.githubusercontent.com/hackclub/india-site/master/public/social/twitter.png"
             sx={{
-              width: [40, 46, 50, 64],
-              height: [40, 46, 50, 64],
+              width: [40, 46, 46, 50, 64],
+              height: [40, 46, 46, 50, 64],
               mx: [2, 3],
             }}
           ></img>
@@ -111,8 +111,8 @@ export default () => (
           <img
             src="https://raw.githubusercontent.com/hackclub/india-site/master/public/social/youtube.png"
             sx={{
-              width: [40, 46, 50, 64],
-              height: [40, 46, 50, 64],
+              width: [40, 46, 46, 50, 64],
+              height: [40, 46, 46, 50, 64],
               mx: [2, 3],
             }}
           ></img>
