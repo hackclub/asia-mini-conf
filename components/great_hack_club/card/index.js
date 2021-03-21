@@ -33,7 +33,7 @@ export default ({
     <CardTemplate
       sx={{
         width: '100%',
-        height: ['300px', '300px', '300px', '300px', '320px', '380px', '450px'],
+        height: ['300px', '300px', '300px', '300px', '320px', '350px', '450px'],
         position: 'relative',
         bg: 'red',
         borderRadius: [10],
@@ -67,13 +67,13 @@ export default ({
         whiteSpace: 'nowrap',
         overflow: 'hidden',
         textOverflow: 'ellipsis',
-        fontSize: [3, 4],
+        fontSize: [3, 3, 3, 3, 3, 3, 4],
         ':hover': { textDecorationLine: 'underline' },
       }}
     >
       {title}
     </h1>
     <AuthorComp author={author} />
-    <p sx={{ fontSize: [1, 1, 1, 1, 1, 2, 3], display: ['block'] }}>{para}</p>
+    <p sx={{ fontSize: [1, 1, 1, 1, 1, 1, 3], display: ['block'] }}>{para}</p>
   </Box>
 );

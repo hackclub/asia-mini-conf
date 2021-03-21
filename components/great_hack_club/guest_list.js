@@ -6,7 +6,7 @@ import * as _ from 'ramda';
 
 export default function Comp() {
   return (
-    <Grid columns={[1, 1, 1, 1, 2, 3]}>
+    <Grid columns={[1, 1, 1, 1, 2, 3]} sx={{ pr: [2, 2, 2, 2, 4] }}>
       {_.map(() =>
         _.map(
           ({ posterurl, author_url, auth_name, title, para, url }) => (
