@@ -5,7 +5,7 @@
 
 import { jsx, Grid } from 'theme-ui';
 import Header from '../components/header/index';
-import Intro from '../components/team/Introduction/index';
+import Intro from '../components/team/introduction/index';
 import Card from '../components/team/card';
 import Footer from '../components/footer/index';
 import * as _ from 'ramda';
