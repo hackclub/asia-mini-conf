@@ -2,20 +2,27 @@
 
 import { jsx, Flex, Text } from 'theme-ui';
 
-export default ({ author, isInBlog = false, date }) => (
+export default ({ auth_name, author, isInBlog = false, date }) => (
   <Flex sx={{ alignItems: 'center' }}>
-    <img
+    <div
       src={author}
-      sx={{ borderRadius: [200], width: isInBlog ? [35] : [40] }}
+      sx={{
+        borderRadius: [200],
+        width: isInBlog ? [35] : [35],
+        height: 35,
+        backgroundImage: `url(${author})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+      }}
     />
     <Text
       sx={{
         pl: isInBlog ? [2] : [3],
-        fontSize: isInBlog ? [1] : [2],
+        fontSize: isInBlog ? [1] : [1],
         ':hover': { textDecorationLine: isInBlog ? 'none' : 'underline' },
       }}
     >
-      - {isInBlog ? (date ? `${date},` : '') : ''} {author}
+      {auth_name}
     </Text>
   </Flex>
 );

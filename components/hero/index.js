@@ -101,7 +101,7 @@ export default function Comp() {
               textShadow: 'none',
             }}
           >
-            Mini
+            Virtual
           </span>
           <span sx={{ display: ['none', 'none', 'none', 'none', 'initial'] }}>
             Conf

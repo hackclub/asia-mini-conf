@@ -1,11 +1,13 @@
 /** @format */
 
+import { useState } from 'react';
 import { Box, Checkbox, Flex, Button } from 'theme-ui';
 import theme from '../../lib/theme/local';
 
 export default function Comp() {
   const w = 1003;
   const h = 455;
+  const [checked, set_checked] = useState(true);
   return (
     <Box
       id="book_ticket"
@@ -112,7 +114,14 @@ export default function Comp() {
             flexDirection: 'column',
             ml: [0, 0, 0, 0, 0, 6],
             mt: [4, 4, 4, 4, 4, 0],
-            alignItems: 'center',
+            alignItems: [
+              'center',
+              'center',
+              'center',
+              'center',
+              'center',
+              'flex-start',
+            ],
           }}
         >
           <Input placeholder="Enter your name" />
@@ -120,12 +129,19 @@ export default function Comp() {
 
           <Flex
             sx={{
-              alignItems: 'center',
               mt: [2],
+              alignItems: 'center',
             }}
           >
             <label class="container">
-              <input type="checkbox" />
+              <input
+                id="check"
+                type="checkbox"
+                checked={checked}
+                onClick={() => {
+                  set_checked(!checked);
+                }}
+              />
               <span class="checkmark"></span>
             </label>
             <p sx={{ width: [220, 300], color: 'yellow', fontSize: [0] }}>
@@ -135,6 +151,7 @@ export default function Comp() {
           <Flex
             sx={{
               justifyContent: 'center',
+              width: '100%',
               mt: [1],
             }}
           >

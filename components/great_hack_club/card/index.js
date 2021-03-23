@@ -15,11 +15,12 @@ export default ({
   para,
   labelimgurl,
   customAfterStyle,
+  auth_name,
   url,
 }) => (
   <Box
-    as="a"
-    href={url ? url : '#'}
+    // as="a"
+    //  href={url ? url : '#'}
     sx={{
       //    width: ['300px', '300px', '300px', '300px', '450px', '300px', '500px'],
       display: 'inline-block',
@@ -73,7 +74,7 @@ export default ({
     >
       {title}
     </h1>
-    <AuthorComp author={author} />
+    <AuthorComp author={author} auth_name={auth_name} />
     <p sx={{ fontSize: [1, 1, 1, 1, 1, 1, 3], display: ['block'] }}>{para}</p>
   </Box>
 );

@@ -12,6 +12,7 @@ export default function Comp() {
 
   return (
     <Box
+      id="expo"
       sx={{
         pl: theme.base.ml,
         overflowX: 'hidden',

@@ -187,10 +187,10 @@ const Nav = ({ data, isHomePage }) => (
 );
 
 const data = [
-  { text: 'Contributors', url: '../../../' },
-  { text: 'Expo', url: 'https://apply.hackclub.com/' },
-  { text: 'FAQ', url: '../../../team' },
-  { text: 'Book Tickets', url: 'https://hackclub.com/brand/' },
+  { text: 'Contributors', url: './contributors' },
+  { text: 'Expo', url: '#expo' },
+  { text: 'FAQ', url: './faq' },
+  { text: 'Book Tickets', url: '#book_ticket' },
 ];
 
 const Overlay = ({ display }) => (
@@ -206,10 +206,10 @@ const Overlay = ({ display }) => (
       flexDirection: 'column',
     }}
   >
-    <OverlayItem Text={'Contributors'} url="../../" />
-    <OverlayItem Text={'Expo'} url="https://apply.hackclub.com/" />
-    <OverlayItem Text={'FAQ'} url="../../../team" />
-    <OverlayItem Text={'Book Ticket'} url="https://hackclub.com/brand/" />
+    <OverlayItem Text={'Contributors'} url="./contributors" />
+    <OverlayItem Text={'Expo'} url="#expo" />
+    <OverlayItem Text={'FAQ'} url="./faq" />
+    <OverlayItem Text={'Book Ticket'} url="#book_ticket" />
   </div>
 );
 
