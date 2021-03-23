@@ -113,6 +113,9 @@ export default (req, res) => {
                     })
                     .catch((err) => {
                       console.log('there are some erros', err);
+                      res.send(
+                        JSON.stringify({ message: 'something_went_wrong' })
+                      );
                     });
                 });
             } else {

@@ -12,7 +12,7 @@ import Head from 'next/head';
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
-      <Meta as={Head} />
+      <Meta name="Hack Club Asia Virtual Conf" as={Head} />
       <Component {...pageProps} />;
     </ThemeProvider>
   );

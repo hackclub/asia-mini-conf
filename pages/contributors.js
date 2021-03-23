@@ -46,18 +46,25 @@ const data = [
     position: 'Design',
   },
   {
-    url: 'rafi.jpg',
-    name: 'Rafi Rasheed',
-    position: 'Streaming',
-  },
-  {
-    url: 'rohan.jpeg',
-    name: 'Rohan',
-    position: 'Design',
+    url: 'anna.jpeg',
+    name: 'Anna Grace',
+    position: 'Social Media',
   },
   {
     url: 'vaibhav.jpg',
     name: 'Vaibhav Aggarwal',
+    position: 'Design',
+  },
+
+  {
+    url: 'rafi.jpg',
+    name: 'Rafi Rasheed',
+    position: 'Streaming',
+  },
+
+  {
+    url: 'rohan.jpeg',
+    name: 'Rohan',
     position: 'Design',
   },
 ];
