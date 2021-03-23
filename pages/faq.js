@@ -102,11 +102,7 @@ const data = [
   `,
     a: `The sole purpose of taking your email and name is to send you personalized updates on the event. The data will be not be shared with any third party.`,
   },
-  {
-    q: `Why are my email and name being taken?
-  `,
-    a: `The sole purpose of taking your email and name is to send you personalized updates on the event. The data will be not be shared with any third party.`,
-  },
+
   {
     q: `I have made a cool project and want to show it to the expo, whom to contact?`,
     a: `You can contact Harsh Bajpai on slack, we would love to show your project at our expo.`,

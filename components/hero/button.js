@@ -5,6 +5,8 @@ import { Box, Flex } from 'theme-ui';
 export default () => {
   return (
     <Flex
+      href="#book_ticket"
+      as={'a'}
       sx={{
         background:
           'linear-gradient(92.34deg, rgba(166, 51, 214, 0.9) 5.39%, #EC3750 99.59%)',
@@ -19,9 +21,12 @@ export default () => {
         ':hover': {
           transform: 'scale(1.05)',
         },
+        textDecoration: 'none',
       }}
     >
-      <h3 sx={{ m: 0, fontSize: [1, 1, 1, 1, 1, 2] }}>Book Your Tickets</h3>
+      <h3 sx={{ m: 0, color: 'white', fontSize: [1, 1, 1, 1, 1, 2] }}>
+        Book Your Tickets
+      </h3>
       <img src="ticket.png" sx={{ width: [35], height: [35], ml: [3] }} />
     </Flex>
   );

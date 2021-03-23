@@ -3,7 +3,7 @@
 
  */
 
-import { jsx, Grid } from 'theme-ui';
+import { Box, Grid } from 'theme-ui';
 import Header from '../components/header/index';
 import Intro from '../components/team/introduction/index';
 import Card from '../components/team/card';
@@ -11,16 +11,16 @@ import Footer from '../components/footer/index';
 import * as _ from 'ramda';
 
 export default () => (
-  <>
+  <Box>
     <Header />
     <Intro />
-    <Grid columns={[1, 1, 2, 3]} sx={{ pb: 4, mt: [4, 5] }}>
+    <Grid columns={[1, 1, 1, 1, 3]} sx={{ pb: 4, mt: [4, 5] }}>
       {_.map(({ url, name, position }) => (
         <Card url={url} name={name} position={position} />
       ))(data)}
     </Grid>
     <Footer />
-  </>
+  </Box>
 );
 
 const data = [
@@ -65,6 +65,16 @@ const data = [
   {
     url: 'rohan.jpeg',
     name: 'Rohan',
+    position: 'UX Design',
+  },
+  {
+    url: 'vikas.jpeg',
+    name: 'Vikas Sethi',
+    position: 'Streaming',
+  },
+  {
+    url: 'anurag.jpeg',
+    name: 'Anurag Bhardwaj',
     position: 'Design',
   },
 ];

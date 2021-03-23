@@ -97,7 +97,7 @@ export default (req, res) => {
 
                   sendEmail({
                     subject: `Hey ${name}, Welcome to Hack Club Asia Virtual Conf`,
-                    to: 'gabruharsh244@gmail.com',
+                    to: email,
                     html: html(name),
                     from: process.env.EMAIL,
                     attachments: [

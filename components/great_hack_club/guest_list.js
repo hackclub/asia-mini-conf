@@ -59,7 +59,7 @@ He has contributed in numerous emails and, could land a ton of sponsorships for 
     auth_name: 'Smile Gupta',
     title: 'How to organize a great Hackathon',
     para: `Smile Gupta is a software engineer at Konfhub and she organized "Autumn Hacks", one of the best Hackathons conducted in India.
-    Leanr from her what goes into organzing a great hackathon!`,
+    Learn from her what goes into organzing a great hackathon!`,
     url: '#',
   },
   {
@@ -67,7 +67,7 @@ He has contributed in numerous emails and, could land a ton of sponsorships for 
     author_url: 'vishal.png',
     auth_name: 'Yashvardhan Gupta',
     title: 'From Volunteering to Working Full Time as a Community Manager',
-    para: `Vishal Das is a community manager at CodeChef* and is now professional managing 200+ communities across India. 
+    para: `Vishal Das is a community manager at CodeChef and is now professional managing 200+ communities across India. 
 Visit his journey with him, from Volunteering to Manging 200+ clubs professionaly!`,
     url: '#',
   },

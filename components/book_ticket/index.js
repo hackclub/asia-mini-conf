@@ -40,6 +40,11 @@ export default function Comp() {
     }, 5000);
   };
 
+  const clear_field = () => {
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+  };
+
   const on_click = () => {
     if (!checked) {
       toast.error('please accept the terms and agreement box to continue');
@@ -53,7 +58,7 @@ export default function Comp() {
       return 0;
     }
     set_loading(true);
-    register(name, email, toast, create_confetti, set_loading);
+    register(name, email, toast, create_confetti, set_loading, clear_field);
   };
 
   return (
@@ -197,7 +202,7 @@ export default function Comp() {
               <span class="checkmark"></span>
             </label>
             <p sx={{ width: [220, 300], color: 'yellow', fontSize: [0] }}>
-              I agree to reieve promotional emails for this event
+              I agree to recieve promotional emails for this event
             </p>
           </Flex>
           <Flex
