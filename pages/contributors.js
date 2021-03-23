@@ -48,7 +48,7 @@ const data = [
 
   {
     url: 'yash.jpeg',
-    name: 'Yashwardhan Gupta',
+    name: 'Yashwvardhan Gupta',
     position: 'Design',
   },
   {
