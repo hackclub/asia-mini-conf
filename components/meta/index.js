@@ -4,6 +4,7 @@ import Head from 'next/head';
 export default () => (
   <Head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:site_name" content="Hack Club Asia Virtual Conf" />
     <meta
       name="description"
       content="Welcome to Hack Club Asia Virtual Conference, learn how to run a great Hack Club and see cool awesome projects!"
