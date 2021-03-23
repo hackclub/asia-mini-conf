@@ -1,13 +1,61 @@
 /** @format */
 
 import { useState } from 'react';
-import { Box, Checkbox, Flex, Button } from 'theme-ui';
-import theme from '../../lib/theme/local';
+import { Box, Checkbox, Flex, Button, Spinner } from 'theme-ui';
+import register from '../../lib/utils/register';
+
+import useWindoeSize from 'react-use/lib/useWindowSize';
+
+import Confetti from 'react-dom-confetti';
+
+const config = {
+  angle: 90,
+  spread: 360,
+  startVelocity: 40,
+  elementCount: 70,
+  dragFriction: 0.12,
+  duration: '4450',
+  stagger: 3,
+  width: '24px',
+  height: '36px',
+  perspective: '500px',
+  colors: ['#a864fd', '#29cdff', '#78ff44', '#ff718d', '#fdff6a'],
+};
+import validator from 'email-validator';
+import { ToastContainer, toast } from 'react-toastify';
+import { set } from 'lodash';
 
 export default function Comp() {
   const w = 1003;
   const h = 455;
   const [checked, set_checked] = useState(true);
+  const [confetti, set_confetti] = useState(false);
+
+  const [loading, set_loading] = useState(false);
+
+  const create_confetti = () => {
+    set_confetti(true);
+    setTimeout(() => {
+      set_confetti(false);
+    }, 5000);
+  };
+
+  const on_click = () => {
+    if (!checked) {
+      toast.error('please accept the terms and agreement box to continue');
+      return 0;
+    }
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+
+    if (!validator.validate(email)) {
+      toast.error('please enter a valid email to continue');
+      return 0;
+    }
+    set_loading(true);
+    register(name, email, toast, create_confetti, set_loading);
+  };
+
   return (
     <Box
       id="book_ticket"
@@ -37,6 +85,8 @@ export default function Comp() {
         ],
       }}
     >
+      <Confetti active={confetti} config={config} />
+      <ToastContainer />
       <h1
         sx={{
           mb: [0],
@@ -124,8 +174,8 @@ export default function Comp() {
             ],
           }}
         >
-          <Input placeholder="Enter your name" />
-          <Input placeholder="Enter your email" mb={[1]} />
+          <Input placeholder="Enter your name" id="name" />
+          <Input placeholder="Enter your email" mb={[1]} id="email" />
 
           <Flex
             sx={{
@@ -139,7 +189,9 @@ export default function Comp() {
                 type="checkbox"
                 checked={checked}
                 onClick={() => {
-                  set_checked(!checked);
+                  if (!loading) {
+                    set_checked(!checked);
+                  }
                 }}
               />
               <span class="checkmark"></span>
@@ -162,8 +214,11 @@ export default function Comp() {
                 width: '200px',
                 borderRadius: [10],
               }}
+              onClick={() => {
+                on_click();
+              }}
             >
-              Register
+              {!loading ? 'Register' : <Spinner color="black" size={24} />}
             </Button>
           </Flex>
         </Flex>
