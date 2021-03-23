@@ -94,7 +94,6 @@ export default (req, res) => {
                 })
                 .then(() => {
                   res.status(200);
-                  res.send(JSON.stringify({ message: 'user_added' }));
 
                   sendEmail({
                     subject: `Hey ${name}, Welcome to Hack Club Asia Virtual Conf`,
@@ -108,7 +107,13 @@ export default (req, res) => {
                         cid: 'ticket',
                       },
                     ],
-                  }).then(() => {});
+                  })
+                    .then(() => {
+                      res.send(JSON.stringify({ message: 'user_added' }));
+                    })
+                    .catch((err) => {
+                      console.log('there are some erros', err);
+                    });
                 });
             } else {
               res.status(200);
