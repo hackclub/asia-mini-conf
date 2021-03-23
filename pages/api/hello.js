@@ -94,23 +94,21 @@ export default (req, res) => {
                 })
                 .then(() => {
                   res.status(200);
+                  res.send(JSON.stringify({ message: 'user_added' }));
 
                   sendEmail({
-                    subject: `Hey ${name}, Welcome to Hack Club Asia Mini Conf`,
-                    text: `I am sending an email from nodemailer! \na new line`,
+                    subject: `Hey ${name}, Welcome to Hack Club Asia Virtual Conf`,
                     to: 'gabruharsh244@gmail.com',
                     html: html(name),
                     from: process.env.EMAIL,
                     attachments: [
                       {
                         filename: 'ticket.png',
-                        path: path.resolve('./public', 'ticket.png'),
+                        path: path.resolve('./public', 'mail_ticket.png'),
                         cid: 'ticket',
                       },
                     ],
-                  }).then(() => {
-                    res.send(JSON.stringify({ message: 'user_added' }));
-                  });
+                  }).then(() => {});
                 });
             } else {
               res.status(200);
