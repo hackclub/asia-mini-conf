@@ -65,7 +65,7 @@ He has contributed in numerous emails and, could land a ton of sponsorships for 
   {
     posterurl: 'vishal_poster.jpeg',
     author_url: 'vishal.png',
-    auth_name: 'Yashvardhan Gupta',
+    auth_name: 'Vishal Das',
     title: 'From Volunteering to Working Full Time as a Community Manager',
     para: `Vishal Das is a community manager at CodeChef and is now professional managing 200+ communities across India. 
 Visit his journey with him, from Volunteering to Manging 200+ clubs professionaly!`,
