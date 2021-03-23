@@ -207,9 +207,9 @@ const Overlay = ({ display }) => (
     }}
   >
     <OverlayItem Text={'Contributors'} url="./contributors" />
-    <OverlayItem Text={'Expo'} url="#expo" />
+    <OverlayItem Text={'Expo'} url="../../../#expo" />
     <OverlayItem Text={'FAQ'} url="./faq" />
-    <OverlayItem Text={'Book Ticket'} url="#book_ticket" />
+    <OverlayItem Text={'Book Ticket'} url="../../../#book_ticket" />
   </div>
 );
 
