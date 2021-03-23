@@ -28,22 +28,22 @@ const data = [
     url:
       'https://raw.githubusercontent.com/bajpai244/indiablogfilehosting/main/auhtors/harsh.png',
     name: 'Harsh Bajpai',
-    position: 'management & development/design',
+    position: 'Management & Development/Design',
   },
   {
     url: 'saksham.png',
     name: 'Saksham Singh',
-    position: 'motion design',
+    position: 'Motion Design',
   },
   {
     url: 'shubham.jpeg',
     name: 'Shubham Patel',
-    position: 'host',
+    position: 'Host',
   },
   {
     url: 'shubhangi.jpeg',
     name: 'Shubhangi Gupta',
-    position: 'host',
+    position: 'Host',
   },
 
   {
@@ -70,7 +70,7 @@ const data = [
 
   {
     url: 'rohan.jpeg',
-    name: 'Rohan',
+    name: 'Rohan Karmakar',
     position: 'UX Design',
   },
   {
