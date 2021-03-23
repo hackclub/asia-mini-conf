@@ -84,7 +84,7 @@ export default () => (
             }}
           ></img>
         </a>
-        <a href="https://www.instagram.com/hackclubindia/" target="_blank">
+        <a href="https://www.instagram.com/hackclubapac/" target="_blank">
           <img
             src="https://raw.githubusercontent.com/hackclub/india-site/master/public/social/instagram.png"
             sx={{
