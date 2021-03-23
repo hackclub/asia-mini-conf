@@ -11,9 +11,12 @@ import Footer from '../components/footer/index';
 import { Box, Text } from 'theme-ui';
 import { useResizeDetector } from 'react-resize-detector';
 
+import Meta from '../components/meta/index';
+
 export default () => {
   return (
     <>
+      <Meta />
       <Header shouldBeTransparent={true} />
       <Hero />
       <Great_Hack_Club />
