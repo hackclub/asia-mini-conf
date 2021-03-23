@@ -76,7 +76,7 @@ Visit his journey with him, from Volunteering to Manging 200+ clubs professional
     posterurl: 'guru_poster.jpeg',
     author_url: 'guru.png',
     auth_name: 'Guru',
-    title: 'How to organize a great Hackathon',
+    title: 'How to onboard new members to you Hack Club!',
     para: `Guru is a Hack Club lead from SKCET and recently onboarded his juniors to Hack Club in a very awesome way! Learn from him how to onboard new members to your Hack Club and give your Hack Club the start it deserves.`,
     url: '#',
   },
