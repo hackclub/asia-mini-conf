@@ -24,7 +24,7 @@ export default () => (
     />
     <meta
       property="og:image"
-      content="https://raw.githubusercontent.com/bajpai244/indiablogfilehosting/main/files/posterleaders.jpg"
+      content="https://cloud-56zhkixx9-hack-club-bot.vercel.app/0screenshot_2021-03-24_at_1.28.19_am.png"
     />
   </Head>
 );
