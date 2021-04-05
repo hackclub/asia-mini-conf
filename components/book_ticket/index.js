@@ -46,6 +46,9 @@ export default function Comp() {
   };
 
   const on_click = () => {
+    toast.error('Registrations for events are closed now');
+    return 0;
+
     if (!checked) {
       toast.error('please accept the terms and agreement box to continue');
       return 0;
