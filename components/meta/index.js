@@ -26,5 +26,7 @@ export default () => (
       property="og:image"
       content="https://cloud-56zhkixx9-hack-club-bot.vercel.app/0screenshot_2021-03-24_at_1.28.19_am.png"
     />
+    <meta name="robots" content="noindex" />
+    <meta name="google-site-verification" content="uyPeJRqZIEYVosgkC9sW9Rx6_cgpgPfK19wqCwviXXM" />
   </Head>
 );
