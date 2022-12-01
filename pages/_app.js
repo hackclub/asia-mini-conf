@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider theme={theme}>
       <Meta name="Hack Club Asia Virtual Conf" as={Head}>
         <meta name="robots" content="noindex" />
+        <meta name="google-site-verification" content="uyPeJRqZIEYVosgkC9sW9Rx6_cgpgPfK19wqCwviXXM" />
       </Meta>
       <Component {...pageProps} />
     </ThemeProvider>
